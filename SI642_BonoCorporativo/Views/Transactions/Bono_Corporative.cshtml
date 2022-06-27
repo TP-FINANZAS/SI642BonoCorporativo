@@ -89,45 +89,53 @@
                         @Html.ValidationMessageFor(model => model.RateType_Id, "", new { @class = "text-danger" })
                     </div>
                     <div class="col-md-3 mb-2">
-                        @*@Html.LabelF(model => model.InterestRate, "", htmlAttributes: new { @class = "control-label col-md-5", @style = "font-weight: bold; color:black;" })*@
+                        @Html.LabelFor(model => model.InterestRate, "", htmlAttributes: new { @class = "control-label col-md-5", @style = "font-weight: bold; color:black;" })
                         <label style="font-weight: bold; color:black;">&nbsp;&nbsp;&nbsp;% Tasa de Interes</label>
                         @Html.EditorFor(model => model.InterestRate, new { htmlAttributes = new { @type = "number", @class = "form-control form-control-solid", @style = "color:black;" } })
                         @Html.ValidationMessageFor(model => model.InterestRate, "", new { @class = "text-danger" })
 
                     </div>
                     <div class="col-md-3 mb-2">
+                        @Html.LabelFor(model => model.cok, "", htmlAttributes: new { @class = "control-label col-md-5", @style = "font-weight: bold; color:black;" })
                         <label style="font-weight: bold; color:black;">&nbsp;&nbsp;&nbsp;% COK</label>
                         @Html.EditorFor(model => model.cok, new { htmlAttributes = new { @type = "number", @class = "form-control form-control-solid", @style = "color:black;" } })
+                        @Html.ValidationMessageFor(model => model.cok, "", new { @class = "text-danger" })
 
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <div class="col-md-2 mb-2">
+                        @Html.LabelFor(model => model.prima, "", htmlAttributes: new { @class = "control-label col-md-5", @style = "font-weight: bold; color:black;" })
                         <label style="font-weight: bold; color:black;">&nbsp;&nbsp;&nbsp;% Prima</label>
                         @Html.EditorFor(model => model.prima, new { htmlAttributes = new { @type = "number", @class = "form-control form-control-solid", @style = "color:black;" } })
+                        @Html.ValidationMessageFor(model => model.prima, "", new { @class = "text-danger" })
 
                     </div>
                     <div class="col-md-2 mb-2">
+                        @Html.LabelFor(model => model.colocacion, "", htmlAttributes: new { @class = "control-label col-md-5", @style = "font-weight: bold; color:black;" })
                         <label style="font-weight: bold; color:black;">&nbsp;&nbsp;&nbsp;% Colocación</label>
                         @Html.EditorFor(model => model.colocacion, new { htmlAttributes = new { @type = "number", @class = "form-control form-control-solid", @style = "color:black;" } })
-
+                        @Html.ValidationMessageFor(model => model.colocacion, "", new { @class = "text-danger" })
 
                     </div>
                     <div class="col-md-2 mb-2">
+                        @Html.LabelFor(model => model.flotacion, "", htmlAttributes: new { @class = "control-label col-md-5", @style = "font-weight: bold; color:black;" })
                         <label style="font-weight: bold; color:black;">&nbsp;&nbsp;&nbsp;% Flotación</label>
                         @Html.EditorFor(model => model.flotacion, new { htmlAttributes = new { @type = "number", @class = "form-control form-control-solid", @style = "color:black;" } })
-
+                        @Html.ValidationMessageFor(model => model.flotacion, "", new { @class = "text-danger" })
                     </div>
                     <div class="col-md-2 mb-2">
+                        @Html.LabelFor(model => model.cavali, "", htmlAttributes: new { @class = "control-label col-md-5", @style = "font-weight: bold; color:black;" })
                         <label style="font-weight: bold; color:black;">&nbsp;&nbsp;&nbsp;% CAVALI</label>
-                        @Html.EditorFor(model => model.cavali, new { htmlAttributes = new { @type="number", @class = "form-control form-control-solid", @style = "color:black;" } })
-
+                        @Html.EditorFor(model => model.cavali, new { htmlAttributes = new { @type = "number", @class = "form-control form-control-solid", @style = "color:black;" } })
+                        @Html.ValidationMessageFor(model => model.cavali, "", new { @class = "text-danger" })
                     </div>
                     <div class="col-md-3 mb-2">
+                        @Html.LabelFor(model => model.estructuracion, "", htmlAttributes: new { @class = "control-label col-md-5", @style = "font-weight: bold; color:black;" })
                         <label style="font-weight: bold; color:black;">&nbsp;&nbsp;&nbsp;% Estructuración</label>
                         @Html.EditorFor(model => model.estructuracion, new { htmlAttributes = new { @type = "number", @class = "form-control form-control-solid", @style = "color:black;" } })
-
+                        @Html.ValidationMessageFor(model => model.estructuracion, "", new { @class = "text-danger" })
                     </div>
                 </div>
 

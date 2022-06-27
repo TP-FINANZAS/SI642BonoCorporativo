@@ -58,11 +58,34 @@ namespace SI642_BonoCorporativo.Models
         [Required]
         public int User_Id { get; set; }
 
+        [Display(Name = "Valor Prima", Prompt = "Ingresar Valor Prima", Description = "Valor Prima")]
+        [Required(ErrorMessage = "Error: Debe ingresar el campo Valor Prima")]
+        [Range(0.0, float.MaxValue)]
         public double prima { get; set; }
+
+        [Display(Name = "Valor CAVALI", Prompt = "Ingresar Valor CAVALI", Description = "Valor CAVALI")]
+        [Required(ErrorMessage = "Error: Debe ingresar el campo Valor CAVALI")]
+        [Range(0.0, float.MaxValue)]
         public double cavali { get; set; }
+
+        [Display(Name = "Valor Colocación", Prompt = "Ingresar Valor Colocación", Description = "Valor Colocación")]
+        [Required(ErrorMessage = "Error: Debe ingresar el campo Valor Colocación")]
+        [Range(0.0, float.MaxValue)]
         public double colocacion { get; set; }
+
+        [Display(Name = "Valor Flotación", Prompt = "Ingresar Valor Flotación", Description = "Valor Flotación")]
+        [Required(ErrorMessage = "Error: Debe ingresar el campo Valor Flotación")]
+        [Range(0.0, float.MaxValue)]
         public double flotacion { get; set; }
+
+        [Display(Name = "Valor Estructuración", Prompt = "Ingresar Valor Estructuración", Description = "Valor Estructuración")]
+        [Required(ErrorMessage = "Error: Debe ingresar el campo Valor Estructuración")]
+        [Range(0.0, float.MaxValue)]
         public double estructuracion { get; set; }
+
+        [Display(Name = "Valor COK", Prompt = "Ingresar Valor COK", Description = "Valor COK")]
+        [Required(ErrorMessage = "Error: Debe ingresar el campo Valor COK")]
+        [Range(0.0, float.MaxValue)]
         public double cok { get; set; }
         public virtual CoinType CoinType { get; set; }
         public virtual Method Method { get; set; }
