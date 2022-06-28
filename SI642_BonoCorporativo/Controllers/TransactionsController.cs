@@ -59,13 +59,13 @@ namespace SI642_BonoCorporativo.Controllers
             
             if (transaction.CoinType.Name == "$ USD")
             {
-                datos.VN = Convert.ToDouble(transaction.FaceValue) * 0.28;
-                datos.VC = Convert.ToDouble(transaction.CommercialValue) * 0.28;
+                datos.VN = Convert.ToDouble(transaction.FaceValue) * 0.91 ;
+                datos.VC = Convert.ToDouble(transaction.CommercialValue) * 0.91;
             }
             else if (transaction.CoinType.Name == "€ EUR")
             {
-                datos.VN = Convert.ToDouble(transaction.FaceValue) * 0.25;
-                datos.VC = Convert.ToDouble(transaction.CommercialValue) * 0.25;
+                datos.VN = Convert.ToDouble(transaction.FaceValue) * 0.95;
+                datos.VC = Convert.ToDouble(transaction.CommercialValue) * 0.95;
             }
             else {
                 datos.VN = Convert.ToDouble(transaction.FaceValue);
